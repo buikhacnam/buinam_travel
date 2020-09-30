@@ -15,7 +15,7 @@ export default class Services extends Component {
             },
             {
                 icon: <FaPhoneAlt />,
-                title: "Đội ngũ tư vẫn nhiệt tình"
+                title: "Đội ngũ tư vấn nhiệt tình"
             },
             {
                 icon: <FaHiking />,
