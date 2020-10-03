@@ -2,16 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import './index.css';
 import {BrowserRouter as Router} from "react-router-dom";
+import {TourProvider} from './context';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 
 ReactDOM.render(
-<Router>
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-  </Router>,
+  <TourProvider>
+    <Router>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </Router>
+  </TourProvider>,
   document.getElementById('root')
 );
 
