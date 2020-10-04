@@ -252,6 +252,7 @@ a {
 /*services */
 .services {
     padding: 0.7rem 0;
+    padding-bottom : 1rem;
     background-color: var(--mainWhite);
     text-align: center;
 }
