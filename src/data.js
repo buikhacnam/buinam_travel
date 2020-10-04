@@ -327,5 +327,46 @@ export default [
             }
           ]
         }
-    }
+    },
+    {
+      sys: {
+        id: "9"
+      },
+      fields: {
+        featured: true,
+        name: "Seoul",
+        slug: "seoul",
+        continent: "Châu Á",
+        departure: "Sài Gòn",
+        price: 2200,
+        duration: 6,
+        description:
+        "Thành phố New York không chỉ là trung tâm kinh tế - chính trị lớn nhất thế giới mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt.",
+        destinations: [
+          "Plush pillows and breathable bed linens",
+          "Soft, oversized bath towels",
+          "Full-sized, pH-balanced toiletries",
+          "Complimentary refreshments",
+          "Adequate safety/security",
+          "Internet",
+          "Comfortable beds"
+        ],
+        images: [
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/4840730/pexels-photo-4840730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "waiting"
+              }
+            } 
+          }
+        ]
+      }
+  }
 ]    

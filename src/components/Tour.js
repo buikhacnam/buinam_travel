@@ -18,14 +18,15 @@ export default function Tour({tour}) {
                         <h6>${price}</h6>
                         <p>{duration} N {duration-1} Đ</p>
                     </div>
+                    <div className="bar" />
                 </div>
 
                 <p className="tour-info">{name}</p>
                 <div className="tour-info-container">
                   
-                   <p><span><i className="fas fa-clock span"></i></span>{" "}{" "}<span className="span">Lịch trình:</span>{" "}{duration} ngày {duration-1} đêm</p>
-                   <p><span><i className="fab fa-telegram-plane span"></i></span>{" "}{" "}<span className="span">Khởi hành từ:</span> {" "}{departure}</p>
-                   <p><span><i className="fas fa-map-marker-alt"></i></span>{" "}{" "}<span className="span">Khu vực đến:</span> {continent}</p>
+                   <p><span><i className="fas fa-clock span"></i></span>{" "}<span className="span">Lịch trình:</span>{" "}{duration} ngày {duration-1} đêm</p>
+                   <p><span><i className="fab fa-telegram-plane span"></i></span>{" "}<span className="span">Khởi hành từ:</span> {" "}{departure}</p>
+                   <p><span><i className="fas fa-map-marker-alt"></i></span>{" "}<span className="span">Khu vực đến:</span> {continent}</p>
                   
                 </div>
             </div>
