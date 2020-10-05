@@ -16,7 +16,6 @@ class TourProvider extends Component {
     componentDidMount() {
         let tours = this.formatData(items);
         let featuredTours = tours.filter(tour => tour.featured === true);
-        console.log(featuredTours);
         this.setState({
             tours,
             featuredTours,
