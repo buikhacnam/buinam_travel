@@ -399,7 +399,28 @@ a {
 
 
 
-.slide-img-container  {
-    height: 70vh;
-    
+.slides {
+  position: relative;
+}
+
+.slides .slick-next {
+    position: absolute;
+    top: 50%;
+    right: 5%; 
+}
+
+.slides .slick-prev {
+    position: absolute;
+    top: 50%;
+    left: 5%; 
+    z-index: 1;
+}
+
+.slides .slick-prev:before , .slides .slick-next:before {
+    font-size: 45px;
+    color: var(--mainYellow);
+}
+
+.slides .slick-dots li.slick-active button:before {
+    color: var(--mainYellow);
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {FaHiking, FaPhoneAlt, FaPiggyBank, FaCrown} from 'react-icons/fa';
+import {FaHiking, FaCommentDots, FaPiggyBank, FaCrown} from 'react-icons/fa';
 
 
 export default class Services extends Component {
@@ -11,15 +11,15 @@ export default class Services extends Component {
             },
             {
                 icon: <FaPiggyBank />,
-                title: "Bảo đảm giá tốt nhất"
+                title: "Giá trị tốt nhất"
             },
             {
-                icon: <FaPhoneAlt />,
-                title: "Đội ngũ tư vấn nhiệt tình"
+                icon: <FaCommentDots />,
+                title: "Tư vấn nhiệt tình"
             },
             {
                 icon: <FaHiking />,
-                title: "Hướng dẫn viên chuyên nghiệp"
+                title: "Tour guide chuyên nghiệp"
             }
         ]
     }

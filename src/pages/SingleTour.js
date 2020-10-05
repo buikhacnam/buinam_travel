@@ -3,6 +3,7 @@ import {TourContext} from '../context';
 import {Link} from "react-router-dom";
 import Slider from "react-slick";
 
+
 export default class SingleTour extends Component {
    
    constructor(props) {
@@ -29,41 +30,38 @@ export default class SingleTour extends Component {
             )
         }
         const {images} = tour;
+        // eslint-disable-next-line no-unused-vars
+        let [mainImg, ...defaultImg] = images;
         
-        const heroStyle = {
-            height: "70vh",
-            background: `url(${images[1]}) center/cover no-repeat`
-        }
-        
-
         const setting = {
             dots: true,
             fade: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
-            arrows: true,
-            slideToScroll: 1
-            
+            slideToScroll: 1,
+            className: "slides"   
         }
         
         return (
             <>
+                 <div className="slide-img-container">
+                        <Slider {...setting}>
+                            {defaultImg.map(image => {
+                                return (
+                                    <div className="slide-img">
+                                        <div style={
+                                            {
+                                                height: "70vh",
+                                                background: `url(${image}) center/cover no-repeat`
+                                            }}>
+                                        </div>
+                                    </div>
+                                )
+                            })}   
+                        </Slider>
+                 </div>
                 
-                    <Slider {...setting}>
-                    
-                        
-                            <div style={heroStyle}>
-                                <img src={images[0]} alt="" width="100%" />
-                            </div>
-                        
-                            <div style={heroStyle}>
-                            <img src={images[1]} alt="" width="100%" />
-                            </div>
-                    
-                    
-                    </Slider>
-               
             </>
         )
     }
