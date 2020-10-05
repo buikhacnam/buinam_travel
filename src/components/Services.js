@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {FaHiking, FaPhoneAlt, FaPiggyBank, FaCrown} from 'react-icons/fa';
-import Title from './Title';
+
 
 export default class Services extends Component {
     state = {
