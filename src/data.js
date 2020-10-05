@@ -34,7 +34,7 @@ export default [
           {
             fields: {
               file: {
-                url: "wait"
+                url: "https://images.pexels.com/photos/421927/pexels-photo-421927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               }
             } 
           }
@@ -75,7 +75,7 @@ export default [
             {
               fields: {
                 file: {
-                  url: "wait"
+                  url: "https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 }
               } 
             }
@@ -116,7 +116,7 @@ export default [
             {
               fields: {
                 file: {
-                  url: "wait"
+                  url: "https://images.pexels.com/photos/220887/pexels-photo-220887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 }
               } 
             }
@@ -157,7 +157,7 @@ export default [
             {
               fields: {
                 file: {
-                  url: "wait"
+                  url: "https://images.pexels.com/photos/46253/mt-fuji-sea-of-clouds-sunrise-46253.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 }
               } 
             }
@@ -198,7 +198,7 @@ export default [
             {
               fields: {
                 file: {
-                  url: "waiting"
+                  url: "https://images.pexels.com/photos/1386444/pexels-photo-1386444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 }
               } 
             }
@@ -239,7 +239,7 @@ export default [
             {
               fields: {
                 file: {
-                  url: "waiting"
+                  url: "https://images.pexels.com/photos/3229784/pexels-photo-3229784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 }
               } 
             }
@@ -280,7 +280,7 @@ export default [
             {
               fields: {
                 file: {
-                  url: "waiting"
+                  url: "https://images.pexels.com/photos/772686/pexels-photo-772686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 }
               } 
             }
@@ -321,7 +321,7 @@ export default [
             {
               fields: {
                 file: {
-                  url: "waiting"
+                  url: "https://images.pexels.com/photos/161212/rio-de-janeiro-olympics-2016-niteroi-brazil-161212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 }
               } 
             }
@@ -362,11 +362,11 @@ export default [
           {
             fields: {
               file: {
-                url: "waiting"
+                url: "https://images.pexels.com/photos/2410300/pexels-photo-2410300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               }
             } 
           }
         ]
       }
-  }
+    }
 ]    

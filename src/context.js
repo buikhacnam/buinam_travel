@@ -33,9 +33,21 @@ class TourProvider extends Component {
         })
         return tempItems;
     }
+
+    getTour = (slug) => {
+        let tempTours = [...this.state.tours];
+        const tour = tempTours.find(tour => {
+            return tour.slug === slug;
+        })
+        return tour;
+    }
+
     render() {
         return (
-            <TourContext.Provider value={{...this.state}}>
+            <TourContext.Provider value={{
+                ...this.state,
+                getTour: this.getTour
+            }}>
                 {this.props.children}
             </TourContext.Provider>
         )
