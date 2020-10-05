@@ -412,7 +412,7 @@ a {
 .slides .slick-prev {
     position: absolute;
     top: 50%;
-    left: 5%; 
+    left: 4%; 
     z-index: 1;
 }
 
