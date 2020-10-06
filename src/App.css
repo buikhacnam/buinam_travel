@@ -398,7 +398,7 @@ a {
 }
 
 
-
+/*slide images */
 .slides {
   position: relative;
 }
@@ -406,7 +406,7 @@ a {
 .slides .slick-next {
     position: absolute;
     top: 50%;
-    right: 5%; 
+    right: 6%; 
 }
 
 .slides .slick-prev {
