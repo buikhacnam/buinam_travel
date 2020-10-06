@@ -172,11 +172,13 @@ a {
 }
 
 .toursHero {
-    background-image: url("https://images.pexels.com/photos/915972/pexels-photo-915972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    min-height: calc(65vh - 68px);
+    background-image: url("https://images.pexels.com/photos/58737/pexels-photo-58737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     
 }
 
 .aboutHero {
+    min-height: calc(100vh - 68px);
     background-image: url("https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
 
@@ -423,4 +425,24 @@ a {
 
 .slides .slick-dots li.slick-active button:before {
     color: var(--mainYellow);
+}
+
+/*Tour List */
+.tourslist {
+    padding: 5rem 0;
+}
+
+.tourslist-center {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 30px;
+}
+
+@media screen and (min-width: 776px) {
+    .tourslist-center {
+        width: 90vw;
+    }
 }

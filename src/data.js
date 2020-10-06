@@ -1,5 +1,6 @@
 
 export default [
+    //1. new york 
     {
       sys: {
         id: "1"
@@ -13,15 +14,15 @@ export default [
         price: 6000,
         duration: 7,
         description:
-          "Thành phố New York không chỉ là trung tâm kinh tế - chính trị lớn nhất thế giới mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt.",
-        destinations: [
-          "Plush pillows and breathable bed linens",
-          "Soft, oversized bath towels",
-          "Full-sized, pH-balanced toiletries",
-          "Complimentary refreshments",
-          "Adequate safety/security",
-          "Internet",
-          "Comfortable beds"
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
         ],
         images: [
           {
@@ -55,6 +56,7 @@ export default [
         ]
       }
     },
+    //2. paris
     {
         sys: {
           id: "2"
@@ -68,16 +70,16 @@ export default [
           price: 5500,
           duration: 9,
           description:
-            "Thành phố New York không chỉ là trung tâm kinh tế - chính trị lớn nhất thế giới mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt.",
-          destinations: [
-            "Plush pillows and breathable bed linens",
-            "Soft, oversized bath towels",
-            "Full-sized, pH-balanced toiletries",
-            "Complimentary refreshments",
-            "Adequate safety/security",
-            "Internet",
-            "Comfortable beds"
-          ],
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
           images: [
             {
               fields: {
@@ -110,6 +112,7 @@ export default [
           ]
         }
     },
+    //3.london
     {
         sys: {
           id: "3"
@@ -123,16 +126,16 @@ export default [
           price: 5400,
           duration: 7,
           description:
-          "Thành phố New York không chỉ là trung tâm kinh tế - chính trị lớn nhất thế giới mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt.",
-          destinations: [
-            "Plush pillows and breathable bed linens",
-            "Soft, oversized bath towels",
-            "Full-sized, pH-balanced toiletries",
-            "Complimentary refreshments",
-            "Adequate safety/security",
-            "Internet",
-            "Comfortable beds"
-          ],
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
           images: [
             {
               fields: {
@@ -165,6 +168,7 @@ export default [
           ]
         }
     },
+    //4. tokyo
     {
         sys: {
           id: "4"
@@ -178,16 +182,16 @@ export default [
           price: 4500,
           duration: 9,
           description:
-          "Thành phố New York không chỉ là trung tâm kinh tế - chính trị lớn nhất thế giới mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt.",
-          destinations: [
-            "Plush pillows and breathable bed linens",
-            "Soft, oversized bath towels",
-            "Full-sized, pH-balanced toiletries",
-            "Complimentary refreshments",
-            "Adequate safety/security",
-            "Internet",
-            "Comfortable beds"
-          ],
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
           images: [
             {
               fields: {
@@ -219,6 +223,7 @@ export default [
           ]
         }
     },
+    //5. barcelona
     {
         sys: {
           id: "5"
@@ -232,16 +237,16 @@ export default [
           price: 4600,
           duration: 9,
           description:
-          "Thành phố New York không chỉ là trung tâm kinh tế - chính trị lớn nhất thế giới mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt.",
-          destinations: [
-            "Plush pillows and breathable bed linens",
-            "Soft, oversized bath towels",
-            "Full-sized, pH-balanced toiletries",
-            "Complimentary refreshments",
-            "Adequate safety/security",
-            "Internet",
-            "Comfortable beds"
-          ],
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
           images: [
             {
               fields: {
@@ -274,6 +279,7 @@ export default [
           ]
         }
     },
+    //6. Beijing
     {
         sys: {
           id: "6"
@@ -285,18 +291,18 @@ export default [
           continent: "Châu Á",
           departure: "Sài Gòn",
           price: 3500,
-          duration: 7,
+          duration: 8,
           description:
-          "Thành phố New York không chỉ là trung tâm kinh tế - chính trị lớn nhất thế giới mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt.",
-          destinations: [
-            "Plush pillows and breathable bed linens",
-            "Soft, oversized bath towels",
-            "Full-sized, pH-balanced toiletries",
-            "Complimentary refreshments",
-            "Adequate safety/security",
-            "Internet",
-            "Comfortable beds"
-          ],
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
           images: [
             {
               fields: {
@@ -329,6 +335,7 @@ export default [
           ]
         }
     },
+    // 7.Athens
     {
         sys: {
           id: "7"
@@ -342,16 +349,16 @@ export default [
           price: 2500,
           duration: 7,
           description:
-          "Thành phố New York không chỉ là trung tâm kinh tế - chính trị lớn nhất thế giới mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt.",
-          destinations: [
-            "Plush pillows and breathable bed linens",
-            "Soft, oversized bath towels",
-            "Full-sized, pH-balanced toiletries",
-            "Complimentary refreshments",
-            "Adequate safety/security",
-            "Internet",
-            "Comfortable beds"
-          ],
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
           images: [
             {
               fields: {
@@ -384,6 +391,7 @@ export default [
           ]
         }
     },
+    //8. Rio
     {
         sys: {
           id: "8"
@@ -395,18 +403,18 @@ export default [
           continent: "Nam Mĩ",
           departure: "Sài Gòn",
           price: 2500,
-          duration: 9,
+          duration: 8,
           description:
-          "Thành phố New York không chỉ là trung tâm kinh tế - chính trị lớn nhất thế giới mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt.",
-          destinations: [
-            "Plush pillows and breathable bed linens",
-            "Soft, oversized bath towels",
-            "Full-sized, pH-balanced toiletries",
-            "Complimentary refreshments",
-            "Adequate safety/security",
-            "Internet",
-            "Comfortable beds"
-          ],
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
           images: [
             {
               fields: {
@@ -439,6 +447,7 @@ export default [
           ]
         }
     },
+    //9. seoul
     {
       sys: {
         id: "9"
@@ -450,17 +459,17 @@ export default [
         continent: "Châu Á",
         departure: "Sài Gòn",
         price: 2200,
-        duration: 6,
+        duration: 8,
         description:
-        "Thành phố New York không chỉ là trung tâm kinh tế - chính trị lớn nhất thế giới mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt.",
-        destinations: [
-          "Plush pillows and breathable bed linens",
-          "Soft, oversized bath towels",
-          "Full-sized, pH-balanced toiletries",
-          "Complimentary refreshments",
-          "Adequate safety/security",
-          "Internet",
-          "Comfortable beds"
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
         ],
         images: [
           {

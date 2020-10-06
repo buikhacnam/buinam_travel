@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {TourContext} from '../context';
 import {Link} from "react-router-dom";
 import Slider from "react-slick";
-import Banner2 from "../components/Banner2";
+//import Banner2 from "../components/Banner2";
 
 
 export default class SingleTour extends Component {
