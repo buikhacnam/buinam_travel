@@ -30,7 +30,7 @@ export default class SingleTour extends Component {
                 </div>
             )
         }
-        const {images, name} = tour;
+        const {images} = tour;
         // eslint-disable-next-line no-unused-vars
         let [mainImg, ...defaultImg] = images;
         
