@@ -510,7 +510,7 @@ a {
 
 input[type='range'] {
     overflow: hidden;
-    width: 170px;
+    width: 100%;
     -webkit-appearance: none;
     background-color:var(--mainWhite);
   }
@@ -518,7 +518,7 @@ input[type='range'] {
   input[type='range']::-webkit-slider-runnable-track {
     height: 15px;
     -webkit-appearance: none;
-    color:  var(--mainYellow) ; 
+    color:  var(--mainWhite) ; 
    
     margin-top: -1px;
     
@@ -530,7 +530,7 @@ input[type='range'] {
     height: 15px;
     cursor: ew-resize;
     background: #434343;
-    box-shadow: -80px 0 0 80px var(--mainYellow);
+    box-shadow: -300px 0 0 300px var(--mainYellow);
   }
 
 
