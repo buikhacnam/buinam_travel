@@ -235,7 +235,7 @@ a {
 /* Tittle */
 .section-title {
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 
 .section-title h4 {
@@ -249,6 +249,28 @@ a {
     height: 3px;
     margin: 0 auto;
     background-color: var(--mainYellow);
+}
+
+.section-title-two {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-title-two h4 {
+    font-size: 1.5rem;
+    letter-spacing: var(--mainSpacing);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.section-title-two div {
+    padding: 0;
+    width: 5rem;
+    height: 3px;
+    margin: 0 auto;
+    background-color: var(--mainYellow);
+    margin-bottom: 30px;
 }
 
 /*services */
@@ -429,7 +451,7 @@ a {
 
 /*Tour List */
 .tourslist {
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .tourslist-center {
@@ -445,4 +467,92 @@ a {
     .tourslist-center {
         width: 90vw;
     }
+}
+
+
+/*Tour filter */
+.filter-container {
+    padding: 2rem 0;
+}
+
+.filter-form {
+    width: 60vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+}
+
+@media screen and (min-width: 776px) {
+    .filter-form {
+        width: 90vw;
+    }
+}
+
+.form-group {
+    text-transform: capitalize;
+}
+
+.form-group label {
+    display: block;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 0.5rem;
+}
+
+.form-group select {
+    letter-spacing: var(--mainSpacing);
+    padding: 5px 5px;
+    outline-color: var(--mainYellow);
+    border-color: var(--mainYellow);
+}
+
+input[type='range'] {
+    overflow: hidden;
+    width: 170px;
+    -webkit-appearance: none;
+    background-color:var(--mainWhite);
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 15px;
+    -webkit-appearance: none;
+    color:  var(--mainYellow) ; 
+   
+    margin-top: -1px;
+    
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 15px;
+    cursor: ew-resize;
+    background: #434343;
+    box-shadow: -80px 0 0 80px var(--mainYellow);
+  }
+
+
+
+ 
+.form-control {
+    width: 100%;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.single-extra label {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+
+/*empty search */
+.empty-search {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 2rem 0;
+    padding: 1rem;
+    letter-spacing: var(--mainSpacing);
 }

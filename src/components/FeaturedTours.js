@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {TourContext} from '../context';
 import Loading from './Loading';
-import Title from './Title';
+import TitleTwo from './TitleTwo';
 import Tour from './Tour';
 
 export default class FeaturedTours extends Component {
@@ -15,7 +15,7 @@ export default class FeaturedTours extends Component {
 
         return (
             <section className="featured-tours">
-                <Title title="Tours đặc biệt" />
+                <TitleTwo title="Tours đặc biệt" />
                 <div className="featured-tours-center">
                     {loading ? <Loading /> : tours}
                 </div>

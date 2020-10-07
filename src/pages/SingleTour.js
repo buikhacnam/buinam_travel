@@ -48,9 +48,9 @@ export default class SingleTour extends Component {
             <>
                  <div className="slide-img-container">
                         <Slider {...setting}>
-                            {defaultImg.map(image => {
+                            {defaultImg.map((image, index) => {
                                 return (
-                                    <div className="slide-img">
+                                    <div className="slide-img" key={index}>
                                         <div style={
                                             {
                                                 height: "70vh",

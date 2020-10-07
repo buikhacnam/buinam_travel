@@ -73,13 +73,15 @@ class TourProvider extends Component {
             hanoi,
             saigon,
             price,
+            duration
         } = this.state;
         
         //all tours
         let tempTours = [...tours];
 
         //transform value
-        price = parseInt(price)
+        price = parseInt(price);
+        
         
         //filter by continent
         if(continent !== "tất cả") {
@@ -94,10 +96,16 @@ class TourProvider extends Component {
         if(saigon) {
             tempTours = tempTours.filter(tour => tour.saigon === true);
         }
+
+        //filter by duration
+        if(duration !== "không chọn") {
+            duration = parseInt(duration);
+            tempTours =  tempTours.filter(tour => tour.duration === duration);
+        }
         //filter by price
 
         tempTours = tempTours.filter(tour => tour.price <= price);
-        console.log(tempTours)
+        
 
         
         //change state
