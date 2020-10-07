@@ -42,7 +42,7 @@ export default function TourFilter({tours}) {
 
     return (
         <section className="filter-container">
-            <TitleTwo title="tìm Tours" />
+            <TitleTwo title="lựa chọn kì nghỉ" />
             <form className="filter-form">
                 {/* select continent*/}
                 <div className ="form-group">
@@ -61,7 +61,7 @@ export default function TourFilter({tours}) {
 
                   {/* select time*/}
                   <div className ="form-group">
-                  <label htmlFor="duration">Thời gian tour(ngày):</label>
+                  <label htmlFor="duration">Số ngày lịch trình:</label>
                   <select name="duration"
                           id = "duration"
                           value = {duration}

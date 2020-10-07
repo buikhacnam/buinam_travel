@@ -473,6 +473,7 @@ a {
 /*Tour filter */
 .filter-container {
     padding: 2rem 0;
+    background-color: var(--mainWhite);
 }
 
 .filter-form {
