@@ -9,8 +9,10 @@ export default [
         featured: true,
         name: "New York",
         slug: "new-york",
-        continent: "Bắc Mĩ",
+        continent: "Châu Mĩ",
         departure: "Hà Nội",
+        hanoi: true,
+        saigon: false,
         price: 6000,
         duration: 7,
         description:
@@ -67,6 +69,8 @@ export default [
           slug: "paris",
           continent: "Châu Âu",
           departure: "Hà Nội",
+          hanoi: true,
+          saigon: false,
           price: 5500,
           duration: 9,
           description:
@@ -123,6 +127,8 @@ export default [
           slug: "london",
           continent: "Châu Âu",
           departure: "Hà Nội",
+          hanoi: true,
+          saigon: false,
           price: 5400,
           duration: 7,
           description:
@@ -179,6 +185,8 @@ export default [
           slug: "tokyo",
           continent: "Châu Á",
           departure: "Hà Nội",
+          hanoi: true,
+          saigon: false,
           price: 4500,
           duration: 9,
           description:
@@ -234,6 +242,8 @@ export default [
           slug: "barcelona",
           continent: "Châu Âu",
           departure: "Hà Nội",
+          hanoi: true,
+          saigon: false,
           price: 4600,
           duration: 9,
           description:
@@ -290,6 +300,8 @@ export default [
           slug: "beijing",
           continent: "Châu Á",
           departure: "Sài Gòn",
+          hanoi: false,
+          saigon: true,
           price: 3500,
           duration: 8,
           description:
@@ -346,6 +358,8 @@ export default [
           slug: "athens",
           continent: "Châu Âu",
           departure: "Sài Gòn",
+          hanoi: false,
+          saigon: true,
           price: 2500,
           duration: 7,
           description:
@@ -400,8 +414,10 @@ export default [
           featured: true,
           name: "Rio de Janeiro",
           slug: "rio-de-janeiro",
-          continent: "Nam Mĩ",
+          continent: "Châu Mĩ",
           departure: "Sài Gòn",
+          hanoi: false,
+          saigon: true,
           price: 2500,
           duration: 8,
           description:
@@ -458,6 +474,8 @@ export default [
         slug: "seoul",
         continent: "Châu Á",
         departure: "Sài Gòn",
+        hanoi: false,
+        saigon: true,
         price: 2200,
         duration: 8,
         description:

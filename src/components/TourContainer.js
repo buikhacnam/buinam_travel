@@ -16,8 +16,8 @@ export default class TourContainer extends Component {
         
         return (
             <>
-                <TourFilter tours={sortedTours} />
-                <TourList tours ={tours} />
+                <TourFilter tours={tours} />
+                <TourList tours ={sortedTours} />
             </>
         )
     }
