@@ -1,5 +1,528 @@
 
 export default [
+    //10 Havana 1>2 hanoi 7
+    {
+      sys: {
+        id: "10"
+      },
+      fields: {
+        featured: false,
+        name: "Havana",
+        slug: "havana",
+        continent: "Châu Mĩ",
+        departure: "Hà Nội",
+        hanoi: true,
+        saigon: false,
+        price: 1220,
+        duration: 7,
+        description:
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
+        images: [
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/1637122/pexels-photo-1637122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/4226101/pexels-photo-4226101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/4226148/pexels-photo-4226148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/4226153/pexels-photo-4226153.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          }
+        ]
+      }
+    },
+    //11 Bankok 1>2 saigon 8
+    {
+      sys: {
+        id: "11"
+      },
+      fields: {
+        featured: false,
+        name: "Bangkok",
+        slug: "bankok",
+        continent: "Châu Á",
+        departure: "Sài Gòn",
+        hanoi: false,
+        saigon: true,
+        price: 1350,
+        duration: 8,
+        description:
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
+        images: [
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/415708/pexels-photo-415708.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/708764/pexels-photo-708764.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/733064/pexels-photo-733064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/733047/pexels-photo-733047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          }
+        ]
+      }
+    },
+    //12  Lisbon 1>2 hanoi 7
+    {
+      sys: {
+        id: "12"
+      },
+      fields: {
+        featured: false,
+        name: "Lisbon",
+        slug: "lisbon",
+        continent: "Châu Âu",
+        departure: "Hà Nội",
+        hanoi: true,
+        saigon: false,
+        price: 1590,
+        duration: 7,
+        description:
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
+        images: [
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/1534560/pexels-photo-1534560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/9253/sea-city-landscape-sky.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/462024/pexels-photo-462024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/2549156/pexels-photo-2549156.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          }
+        ]
+      }
+    },
+    //13 Mexico City 2>3 saigon 8
+    {
+      sys: {
+        id: "13"
+      },
+      fields: {
+        featured: false,
+        name: "Mexico City",
+        slug: "mexico-city",
+        continent: "Châu Âu",
+        departure: "Sài Gòn",
+        hanoi: false,
+        saigon: true,
+        price: 2800,
+        duration: 8,
+        description:
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
+        images: [
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/604661/pexels-photo-604661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/3551805/pexels-photo-3551805.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/3642720/pexels-photo-3642720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/763429/pexels-photo-763429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          }
+        ]
+      }
+    },
+    //14 Moscow 2>3 saigon 8
+    {
+      sys: {
+        id: "14"
+      },
+      fields: {
+        featured: false,
+        name: "Mát-Xcơ-Va",
+        slug: "moscow",
+        continent: "Châu Âu",
+        departure: "Sài Gòn",
+        hanoi: false,
+        saigon: true,
+        price: 2690,
+        duration: 8,
+        description:
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
+        images: [
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/2842117/pexels-photo-2842117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/415980/pexels-photo-415980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/2775742/pexels-photo-2775742.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/3151668/pexels-photo-3151668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          }
+        ]
+      }
+    },
+    //15 Delhi 2>3 Hanoi 7
+    {
+      sys: {
+        id: "15"
+      },
+      fields: {
+        featured: false,
+        name: "Delhi",
+        slug: "delhi",
+        continent: "Châu Á",
+        departure: "Hà Nội",
+        hanoi: true,
+        saigon: false,
+        price: 2490,
+        duration: 7,
+        description:
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
+        images: [
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/574313/pexels-photo-574313.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/1260801/pexels-photo-1260801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/3672388/pexels-photo-3672388.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          }
+        ]
+      }
+    },
+    //16 Carribbean 3 > 4 hanoi 8
+    {
+      sys: {
+        id: "16"
+      },
+      fields: {
+        featured: false,
+        name: "Carribbean",
+        slug: "carribean",
+        continent: "Châu Mĩ",
+        departure: "Hà Nội",
+        hanoi: true,
+        saigon: false,
+        price: 3290,
+        duration: 8,
+        description:
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
+        images: [
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/1559699/pexels-photo-1559699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/1450354/pexels-photo-1450354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/2598683/pexels-photo-2598683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          }
+        ]
+      }
+    },
+    //17 Amsterdam 3 > 4 hanoi 7
+    {
+      sys: {
+        id: "17"
+      },
+      fields: {
+        featured: false,
+        name: "Amsterdam",
+        slug: "amsterdam",
+        continent: "Châu Âu",
+        departure: "Hà Nội",
+        hanoi: true,
+        saigon: false,
+        price: 3890,
+        duration: 7,
+        description:
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
+        images: [
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/967292/pexels-photo-967292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/1796708/pexels-photo-1796708.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/1796705/pexels-photo-1796705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          }
+        ]
+      }
+    },
+    //18 Singapore 3 > 4 hanoi 7
+    {
+      sys: {
+        id: "18"
+      },
+      fields: {
+        featured: false,
+        name: "Singapore",
+        slug: "singapore",
+        continent: "Châu Á",
+        departure: "Hà Nội",
+        hanoi: true,
+        saigon: false,
+        price: 3890,
+        duration: 7,
+        description:
+          "Thành phố không chỉ là trung tâm kinh tế - chính trị lớn mà còn là thiên đường du lịch hấp dẫn. Nơi đây nổi tiếng với những thắng cảnh tuyệt đẹp, xa hoa, mỹ lệ cùng nhịp sống sôi động, náo nhiệt. Đến với nơi đây, du khách sẽ không khỏi trầm trồ và ngạc nhiên trước sự phát triển hài hòa đan xen hiện đại và cổ kính trong lòng thành phố. Hệ thống giao thông rất hiện đại với đường cao tốc, đường sắt, sân bay xây dựng hết sức khoa học. Hàng năm, nơi đây còn đón hàng ngàn lượt khách đến du lịch tham quan và khám phá những địa điểm nổi tiếng. Nếu bạn đã trót phải lòng vẻ đẹp của đất nước này, hãy cùng Bui Nam Travel khám phá sức hấp dẫn bất tận của vùng đất hứa này nhé!",
+        services: [
+          "Bảo hiểm",
+          "Vé máy bay",
+          "Vé tham quan",
+          "Khách sạn",
+          "Bữa ăn",
+          "Xe đưa đón",   
+          "Hướng dẫn viên"
+        ],
+        images: [
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/2426546/pexels-photo-2426546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/1796708/pexels-photo-1796708.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          },
+          {
+            fields: {
+              file: {
+                url: "https://images.pexels.com/photos/1796705/pexels-photo-1796705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
+            } 
+          }
+        ]
+      }
+    },
+
     //1. new york 
     {
       sys: {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {TourContext} from '../context';
 import {Link} from "react-router-dom";
 import Slider from "react-slick";
-//import Banner2 from "../components/Banner2";
+import BannerTwo from "../components/BannerTwo";
 
 
 export default class SingleTour extends Component {
@@ -30,7 +30,7 @@ export default class SingleTour extends Component {
                 </div>
             )
         }
-        const {images} = tour;
+        const {images, name} = tour;
         // eslint-disable-next-line no-unused-vars
         let [mainImg, ...defaultImg] = images;
         
@@ -51,12 +51,15 @@ export default class SingleTour extends Component {
                             {defaultImg.map((image, index) => {
                                 return (
                                     <div className="slide-img" key={index}>
-                                        <div style={
+                                        <div className = "theme" style={
                                             {
                                                 height: "70vh",
                                                 background: `url(${image}) center/cover no-repeat`
                                             }}
                                         >
+                                        <BannerTwo  subtitle={name}>
+             
+            </BannerTwo>
                                         </div>
                                     </div>
                                 )

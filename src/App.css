@@ -70,7 +70,9 @@ a {
     border: 3px solid var(--mainYellow);
     text-transform: uppercase;
     cursor: pointer;
+    z-index: 5;
 }
+
 
 .btn-primary:hover {
     background:transparent;
@@ -191,6 +193,19 @@ a {
     text-align: center;
     text-transform: capitalize;
     letter-spacing: var(--mainSpacing);
+}
+
+.bannerTwo {
+    
+    display: grid;
+    align-content: space-between;
+   
+    color: var(--mainWhite);
+    padding: 1rem 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+   
 }
 
 .banner:hover  div {
@@ -423,6 +438,16 @@ a {
 
 
 /*slide images */
+
+
+.theme {
+
+    display: flex;
+    
+    justify-content: center;
+
+}
+
 .slides {
   position: relative;
 }
