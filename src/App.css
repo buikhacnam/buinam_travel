@@ -174,7 +174,7 @@ a {
 }
 
 .toursHero {
-    min-height: calc(65vh - 68px);
+    min-height: calc(60vh - 68px);
     background-image: url("https://images.pexels.com/photos/58737/pexels-photo-58737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     
 }

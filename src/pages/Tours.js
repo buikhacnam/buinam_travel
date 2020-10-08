@@ -8,8 +8,8 @@ export default function Tours() {
     return (
         <>
         <Hero hero="toursHero" > 
-            <Banner title="Tours quốc tế">
-                <Link to="/" className="btn-primary">Trang chủ</Link>
+            <Banner title="Lựa Chọn Kì Nghỉ!">
+                <Link to="/" className="btn-primary">Về Trang chủ</Link>
             </Banner>
         </Hero>
         <TourContainer />

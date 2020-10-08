@@ -42,7 +42,7 @@ export default function TourFilter({tours}) {
 
     return (
         <section className="filter-container">
-            <TitleTwo title="lựa chọn kì nghỉ" />
+            <TitleTwo title="sắp xếp tours" />
             <form className="filter-form">
                 {/* select continent*/}
                 <div className ="form-group">
