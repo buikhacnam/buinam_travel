@@ -589,39 +589,73 @@ input[type='range'] {
 /*tour-info-detail */
 
 .information {
-    margin: 0 auto;
+    padding: 20px;
+    margin: 0;
     margin-top: 3rem;
-    width: 80vw;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+    grid-template-areas:
+    "tour-description  form-container"
+    "extra-info  single-tour-info";
 }
 
-@media screen and (min-width: 776px) {
+@media screen and (max-width: 776px) {
     .information {
-        width: 90vw;
+        
+        grid-template-columns:1fr;
+        grid-template-areas:
+        "form-container"
+        "single-tour-info"
+        "tour-description"
+        "extra-info";
     }
 }
 
-.tour-main {
+.tour-description {
+    grid-area: tour-description;
+    margin-bottom: 30px;
+}
+
+
+.extra-info {
+    grid-area: extra-info;
+}
+
+.extra-info h3{
+    letter-spacing: var(--mainSpacing);
+}
+
+.extra {
+    list-style-type: none;
     display: grid;
 }
 
-.tour-main-2 {
-    display: grid;
+.extra li {
+    letter-spacing: var(--mainSpacing);
+    padding: 10px;
+    
 }
 
 
 /* form request tour: */
+.form-container {
+    grid-area: form-container;
+    padding: 1rem;
+    border: 2px solid var(--mainYellow);
+    margin-bottom: 30px;
+    
+}
+
 .form-header {  
         padding: 0px 40px;   
         letter-spacing: var(--mainSpacing);
+        text-align: center;
 }
 
-.form {
-    width: 400px;
-    padding: 30px 40px;	
-    letter-spacing: var(--mainSpacing);
-}
+
 
 .form-control {
 	margin-bottom: 10px;
@@ -630,7 +664,8 @@ input[type='range'] {
 
 .form-control label {
 	margin-bottom: 5px;
-	display: inline-block;
+    display: inline-block;
+    letter-spacing: var(--mainSpacing);
 }
 
 .form-control input {
@@ -655,6 +690,10 @@ input[type='range'] {
 }
 
 /* single tour info */
+
+.single-tour-info {
+    grid-area: single-tour-info;
+}
 .single-tour-info p {
  padding: 10px;
  letter-spacing: var(--mainSpacing);

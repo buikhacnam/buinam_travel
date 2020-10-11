@@ -58,8 +58,7 @@ export default class SingleTour extends Component {
                                             }}
                                         >
                                         <BannerTwo  subtitle={name}>
-             
-            </BannerTwo>
+                                          </BannerTwo>
                                         </div>
                                     </div>
                                 )
@@ -68,33 +67,33 @@ export default class SingleTour extends Component {
                  </div>
 
                  <div className="information">
-                    <div className="tour-main-2">
+                    
                         <div className="tour-description">
                             <h3>Thành Phố {name}</h3>
                             <p>{description}</p>
                         </div>
                         <div className="extra-info">
-                            <h5>Tour bao gồm</h5>
+                            <h3>Tour bao gồm</h3>
                             <ul className="extra">
                                 {services.map((item, index)=> {
-                                    return <li key={index}>{item}</li>
+                                    return <li key={index}><p>- {item}</p></li>
                                 })}
                             </ul>
                         </div>
                     
-                    </div>
-                    <div className="tour-main">
-                        <div>
+                   
+                    
+                        
                         <Form />
-                        </div>
+                        
                         <div className="single-tour-info">
                                 <h3>Thông Tin Tour</h3>
                                 <p>Địa điểm: {name}</p>
                                 <p>Khởi hành từ: {departure}</p>
-                                <p>Lịch trình tour: {duration} ngày {duration} đêm</p>
+                                <p>Lịch trình tour: {duration} ngày {duration - 1} đêm</p>
                                 <p>Giá tour: ${price}</p>
                         </div>
-                    </div>
+                    
                  
                  </div>
                  

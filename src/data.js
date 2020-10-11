@@ -646,7 +646,7 @@ export default [
      featured: true,
      name: "Mexico City",
      slug: "mexico-city",
-     continent: "Châu Âu",
+     continent: "Châu Mĩ",
      departure: "Sài Gòn",
      hanoi: false,
      saigon: true,
