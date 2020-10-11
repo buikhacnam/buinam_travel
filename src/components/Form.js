@@ -3,7 +3,7 @@ import {useState} from 'react';
 import FormSignUp from './FormSignup';
 import FormSuccess from './FormSuccess';
 
-export default function Form() {
+export default function Form({children}) {
     const [isSubmitted, setIsSubmitted] = useState(false);
 
   function submitForm() {
@@ -13,6 +13,7 @@ export default function Form() {
         <div>
             {!isSubmitted ? <FormSignUp submitForm={submitForm} />
         : <FormSuccess />}
+        {children}
         </div>
     )
 }

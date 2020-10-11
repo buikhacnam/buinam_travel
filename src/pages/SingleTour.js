@@ -16,6 +16,10 @@ export default class SingleTour extends Component {
    }
 
    static contextType = TourContext;
+
+   componentDidMount() {
+    window.scrollTo(0, 0)
+  }
    
     render() {
 
@@ -64,40 +68,45 @@ export default class SingleTour extends Component {
                                 )
                             })}   
                         </Slider>
-                 </div>
-
-                 <div className="information">
+                        <div className="information">
                     
                         <div className="tour-description">
                             <h3>Thành Phố {name}</h3>
                             <p>{description}</p>
+
+                            <div className="extra-info">
+                                <h5>Tour bao gồm</h5>
+                                <ul className="extra">
+                                    {services.map((item, index)=> {
+                                        return <li key={index}><p>- {item}</p></li>
+                                    })}
+                                </ul>
+                             </div>
                         </div>
-                        <div className="extra-info">
-                            <h3>Tour bao gồm</h3>
-                            <ul className="extra">
-                                {services.map((item, index)=> {
-                                    return <li key={index}><p>- {item}</p></li>
-                                })}
-                            </ul>
-                        </div>
+                      
                     
                    
                     
                         
-                        <Form />
-                        
-                        <div className="single-tour-info">
+                        <Form>
+                             <div className="single-tour-info">
                                 <h3>Thông Tin Tour</h3>
                                 <p>Địa điểm: {name}</p>
                                 <p>Khởi hành từ: {departure}</p>
                                 <p>Lịch trình tour: {duration} ngày {duration - 1} đêm</p>
                                 <p>Giá tour: ${price}</p>
-                        </div>
+                           </div>
+                        </Form>
+                        
+                     
                     
                  
                  </div>
                  
                  
+                 </div>
+
+                
                 
             </>
         )
