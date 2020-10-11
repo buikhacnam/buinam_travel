@@ -3,7 +3,7 @@ import {TourContext} from '../context';
 import {Link} from "react-router-dom";
 import Slider from "react-slick";
 import BannerTwo from "../components/BannerTwo";
-
+import Form from '../components/Form';
 
 export default class SingleTour extends Component {
    
@@ -30,7 +30,7 @@ export default class SingleTour extends Component {
                 </div>
             )
         }
-        const {images, name} = tour;
+        const {images, name, departure, price, duration, description, services} = tour;
         // eslint-disable-next-line no-unused-vars
         let [mainImg, ...defaultImg] = images;
         
@@ -66,6 +66,39 @@ export default class SingleTour extends Component {
                             })}   
                         </Slider>
                  </div>
+
+                 <div className="information">
+                    <div className="tour-main-2">
+                        <div className="tour-description">
+                            <h3>Thành Phố {name}</h3>
+                            <p>{description}</p>
+                        </div>
+                        <div className="extra-info">
+                            <h5>Tour bao gồm</h5>
+                            <ul className="extra">
+                                {services.map((item, index)=> {
+                                    return <li key={index}>{item}</li>
+                                })}
+                            </ul>
+                        </div>
+                    
+                    </div>
+                    <div className="tour-main">
+                        <div>
+                        <Form />
+                        </div>
+                        <div className="single-tour-info">
+                                <h3>Thông Tin Tour</h3>
+                                <p>Địa điểm: {name}</p>
+                                <p>Khởi hành từ: {departure}</p>
+                                <p>Lịch trình tour: {duration} ngày {duration} đêm</p>
+                                <p>Giá tour: ${price}</p>
+                        </div>
+                    </div>
+                 
+                 </div>
+                 
+                 
                 
             </>
         )

@@ -4,6 +4,7 @@ import Banner from '../components/Banner';
 import {Link} from 'react-router-dom';
 import TourContainer from '../components/TourContainer';
 
+
 export default function Tours() {
     return (
         <>

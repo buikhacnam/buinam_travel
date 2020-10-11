@@ -74,6 +74,8 @@ a {
 }
 
 
+
+
 .btn-primary:hover {
     background:transparent;
     color: var(--mainYellow);
@@ -86,7 +88,7 @@ a {
     left: 0;
     width: 100%;
     padding: 0.2rem 2rem;
-    z-index: 1;
+    z-index: 2;
     background-color: var(--mainWhite);
     
 }
@@ -166,7 +168,7 @@ a {
 
 /* Hero */
 .defaultHero, .toursHero, .aboutHero {
-    min-height: calc(85vh - 68px);
+    min-height: calc(100vh - 68px);
     background: url("https://images.pexels.com/photos/2676642/pexels-photo-2676642.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center/cover no-repeat;
     align-items: center;
     justify-content: center;
@@ -450,6 +452,7 @@ a {
 
 .slides {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .slides .slick-next {
@@ -581,4 +584,78 @@ input[type='range'] {
     margin: 2rem 0;
     padding: 1rem;
     letter-spacing: var(--mainSpacing);
+}
+
+/*tour-info-detail */
+
+.information {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+@media screen and (min-width: 776px) {
+    .information {
+        width: 90vw;
+    }
+}
+
+.tour-main {
+    display: grid;
+}
+
+.tour-main-2 {
+    display: grid;
+}
+
+
+/* form request tour: */
+.form-header {  
+        padding: 0px 40px;   
+        letter-spacing: var(--mainSpacing);
+}
+
+.form {
+    width: 400px;
+    padding: 30px 40px;	
+    letter-spacing: var(--mainSpacing);
+}
+
+.form-control {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.form-control label {
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+    font-family: inherit;
+    letter-spacing: var(--mainSpacing);
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: var(--mainYellow);
+}
+
+.form-control small {
+    color: #e74c3c;
+    font-size: 0.8rem;
+}
+
+/* single tour info */
+.single-tour-info p {
+ padding: 10px;
+ letter-spacing: var(--mainSpacing);
 }
