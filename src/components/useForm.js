@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 
-export default function useForm(callbackk, validatee) {
+export default function useForm(callback, validate) {
     const [values, setValues] = useState({
         username: '',
         email: '',
@@ -22,16 +22,17 @@ export default function useForm(callbackk, validatee) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        setErrors(validatee(values));
+        setErrors(validate(values));
         setIsSubmitting(true);
     }
 
     useEffect(
         () => {
           if (Object.keys(errors).length === 0 && isSubmitting) {
-            callbackk();
+            callback();
           }
         },
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         [errors]
       );
     return { handleChange, values, handleSubmit, errors};
