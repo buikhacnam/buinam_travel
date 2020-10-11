@@ -602,9 +602,9 @@ input[type='range'] {
     
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width:800px) {
     .information {
-        
+        padding: 20px;
         grid-template-columns:1fr;
         grid-template-areas:
         "form-container"
