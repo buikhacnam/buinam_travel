@@ -70,7 +70,7 @@ a {
     border: 3px solid var(--mainYellow);
     text-transform: uppercase;
     cursor: pointer;
-    z-index: 5;
+    z-index: 1;
 }
 
 .btn-primary-2 {
@@ -84,11 +84,13 @@ a {
     text-transform: uppercase;
     font-size: 0.8rem;
     cursor: pointer;
-    z-index: 5;
+    z-index: 1;
 }
 
 
-
+.react-datepicker {
+    z-index: 5;
+}
 
 .btn-primary:hover {
     background:transparent;
@@ -548,6 +550,8 @@ a {
     margin-bottom: 0.5rem;
 }
 
+
+
 .form-group select {
     letter-spacing: var(--mainSpacing);
     padding: 5px 5px;
@@ -583,11 +587,13 @@ input[type='range'] {
 
 
  
-.form-control {
+.form-control-filter {
     width: 100%;
     background: transparent;
     font-size: 1rem;
 }
+
+
 
 .single-extra label {
     display: inline-block;
@@ -681,16 +687,22 @@ input[type='range'] {
 
 .form-control {
 	margin-bottom: 10px;
-	position: relative;
+}	
+
+.form-control-date {
+    display: grid;
+    
+    margin-bottom: 10px;
 }
 
-.form-control label {
+.form-control label, .form-control-date label, .form-control-error label {
 	margin-bottom: 5px;
     display: inline-block;
     letter-spacing: var(--mainSpacing);
 }
 
-.form-control input {
+
+.form-control input, .form-control-date input {
 	border: 2px solid #f0f0f0;
 	
 	display: block;
@@ -723,6 +735,34 @@ input[type='range'] {
     font-size: 0.8rem;
 }
 
+.people{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    text-align: center;
+    border: 3px solid var(--mainYellow);
+    align-items: center;
+    background-color: var(--mainWhite);
+}
+
+.price {
+    display: flex;
+    color: var(--mainYellow);
+    width: 100%;
+    text-align: center;
+    background-color: var(--mainWhite);
+    border: 3px solid var(--mainYellow);
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 2rem;
+    letter-spacing: var(--mainSpacing);
+}
+
+.self{
+    display: block;
+}
+
 /* single tour info */
 
 .single-tour-info {
@@ -736,3 +776,4 @@ input[type='range'] {
  padding: 10px 0;
  letter-spacing: var(--mainSpacing);
 }
+

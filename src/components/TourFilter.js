@@ -50,7 +50,7 @@ export default function TourFilter({tours}) {
                     <select name="continent"
                             id = "continent"
                             value = {continent}
-                            className = "form-control"
+                            className = "form-control-filter"
                             onChange = {handleChange}
                     >
                         {continents}
@@ -65,7 +65,7 @@ export default function TourFilter({tours}) {
                   <select name="duration"
                           id = "duration"
                           value = {duration}
-                          className = "form-control"
+                          className = "form-control-filter"
                           onChange = {handleChange}
                   >
                       {timeDuration}
@@ -84,7 +84,7 @@ export default function TourFilter({tours}) {
                       id = {price}
                       value = {price}
                       onChange = {handleChange}
-                      className = "form-control" 
+                      className = "form-control-filter" 
                />
            </div>
            {/* end of Price Range */}

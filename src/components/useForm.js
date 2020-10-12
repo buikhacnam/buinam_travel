@@ -11,7 +11,8 @@ export default function useForm(callback, validate) {
     })
     const [errors, setErrors] = useState({});
 
-    
+    const [date, setDate] = useState(new Date());
+
 
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -23,6 +24,10 @@ export default function useForm(callback, validate) {
         });
        
 
+    }
+
+    function handleDateChange(date) {
+      setDate(date)
     }
 
     const handleSubmit = e => {
@@ -47,6 +52,6 @@ export default function useForm(callback, validate) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
         [errors]
       );
-    return { handleChange, values, handleSubmit, errors};
+    return { handleChange, values, handleSubmit, errors, date, handleDateChange};
 }
 
