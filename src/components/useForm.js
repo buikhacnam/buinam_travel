@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 
+
 export default function useForm(callback, validate) {
   //callback = submitForm = submitForm();
   //validate = validate = validateInfo(values)
@@ -9,6 +10,8 @@ export default function useForm(callback, validate) {
         phone: ''
     })
     const [errors, setErrors] = useState({});
+
+    
 
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -27,6 +30,8 @@ export default function useForm(callback, validate) {
         setErrors(validate(values));
         setIsSubmitting(true);
     }
+
+    
 
     useEffect(
         () => {

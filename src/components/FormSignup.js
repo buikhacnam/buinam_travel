@@ -3,9 +3,19 @@ import useForm from './useForm';
 import validate from './validateInfo';
 
 
-export default function FormSignup({submitForm}) {
+export default function FormSignup({submitForm, recentPrice, increasedPrice, decreasedPrice, person}) {
     const {handleChange, values, handleSubmit, errors} = useForm(submitForm, validate);
+    
+    function increasePrice() {
+      return   increasedPrice()
+    }
+
+    function decreasePrice() {
+        return   decreasedPrice()
+    }
+
     return (
+        
         
         <div className="form-container">
             <h3 className="form-header">Đặt tour ngay!</h3>
@@ -52,9 +62,13 @@ export default function FormSignup({submitForm}) {
                     />
                     {errors.phone && <small>{errors.phone}</small>}
              </div>
+             <p>${recentPrice}</p>
+             <button type="button" onClick={increasePrice}>+</button>
+             <button type="button" onClick={decreasePrice}>-</button>
+             <p>{person}</p>
 
              <button type="submit" style={{width: '100%'}} className="btn-primary">Yêu cầu đặt</button>
-
+            
 
            </form>
         </div>

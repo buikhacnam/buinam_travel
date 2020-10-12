@@ -88,7 +88,7 @@ export default class SingleTour extends Component {
                    
                     
                         
-                        <Form>
+                        <Form price={price}>
                              <div className="single-tour-info">
                                 <h3>Thông Tin Tour</h3>
                                 <p>Địa điểm: {name}</p>
