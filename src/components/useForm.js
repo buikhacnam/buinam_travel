@@ -1,6 +1,8 @@
 import {useState, useEffect} from 'react';
 
 export default function useForm(callback, validate) {
+  //callback = submitForm = submitForm();
+  //validate = validate = validateInfo(values)
     const [values, setValues] = useState({
         username: '',
         email: '',
@@ -30,6 +32,11 @@ export default function useForm(callback, validate) {
         () => {
           if (Object.keys(errors).length === 0 && isSubmitting) {
             callback();
+            setValues({
+              username: '',
+              email: '',
+              phone: ''
+            });
           }
         },
         // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -10,10 +10,21 @@ export default function Form({children}) {
     setIsSubmitted(true);
   }
     return (
-        <div>
-            {!isSubmitted ? <FormSignUp submitForm={submitForm} />
-        : <FormSuccess />}
-        {children}
-        </div>
+      <>
+            {!isSubmitted ? 
+              <div>
+                <FormSignUp submitForm={submitForm} />
+                {children}
+              </div>
+             :<div> 
+                <FormSignUp submitForm={submitForm}/> 
+                <FormSuccess />
+                {children}
+               </div>
+            }
+      
+      </>
+        
+       
     )
 }

@@ -10,7 +10,7 @@ export default function FormSignup({submitForm}) {
         <div className="form-container">
             <h3 className="form-header">Đặt tour ngay!</h3>
            <form className="form" onSubmit={handleSubmit}>
-             <div className="form-control">
+             <div className={!errors.username ? "form-control" : "form-control-error" } >
                 <label htmlFor="username">
                 Họ & Tên
                 </label>
@@ -20,11 +20,12 @@ export default function FormSignup({submitForm}) {
                         placeholder="nhập tên bạn"
                         value={values.username}
                         onChange={handleChange}
+                       
                 />
                 {errors.username && <small>{errors.username}</small>}
              </div>
 
-             <div className="form-control">
+             <div className={!errors.email ? "form-control" : "form-control-error" } >
                 <label 
                 htmlFor="email">Email</label>
                     <input  id="email"
@@ -39,7 +40,7 @@ export default function FormSignup({submitForm}) {
 
              
 
-             <div className="form-control">
+             <div className={!errors.phone ? "form-control" : "form-control-error" } >
                 <label 
                 htmlFor="phone">Số Điện Thoại</label>
                     <input  id="phone"

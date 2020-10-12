@@ -73,10 +73,29 @@ a {
     z-index: 5;
 }
 
+.btn-primary-2 {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: var(--mainSpacing);
+    color: var(--mainBlack);
+    background-color: var(--mainYellow);
+    padding: 0.3rem 0.5rem;
+    border: 2px solid var(--mainYellow);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
 
 
 
 .btn-primary:hover {
+    background:transparent;
+    color: var(--mainYellow);
+}
+
+.btn-primary-2:hover {
     background:transparent;
     color: var(--mainYellow);
 }
@@ -595,7 +614,7 @@ input[type='range'] {
     display: grid;
     grid-template-columns: 1fr 400px;
     grid-template-rows: auto;
-    grid-column-gap: 40px;
+    grid-column-gap: 60px;
     grid-row-gap: 30px;
     grid-template-areas:
     "tour-description  form-container";
@@ -648,7 +667,7 @@ input[type='range'] {
     grid-area: form-container;
     
    
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     
 }
 
@@ -673,7 +692,7 @@ input[type='range'] {
 
 .form-control input {
 	border: 2px solid #f0f0f0;
-	border-radius: 4px;
+	
 	display: block;
 	font-size: 14px;
 	padding: 10px;
@@ -682,12 +701,24 @@ input[type='range'] {
     letter-spacing: var(--mainSpacing);
 }
 
+.form-control-error input{
+    border: 2px solid #e74c3c;
+	display: block;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+    font-family: inherit;
+    letter-spacing: var(--mainSpacing);
+}
+
+
+
 .form-control input:focus {
 	outline: 0;
 	border-color: var(--mainYellow);
 }
 
-.form-control small {
+.form-control-error small {
     color: #e74c3c;
     font-size: 0.8rem;
 }

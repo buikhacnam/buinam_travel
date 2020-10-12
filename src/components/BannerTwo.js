@@ -5,9 +5,9 @@ export default function BannerTwo({children, subtitle}) {
     return (
         <div className="bannerTwo">
           
-                 <h1>{subtitle}</h1>
+                 <h2>{subtitle}</h2>
              
-            <Link to="/tours" className="btn-primary">xem tours khác</Link>
+            <Link to="/tours" className="btn-primary-2">xem tours khác</Link>
            
             {children}
             
