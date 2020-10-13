@@ -6,7 +6,7 @@ export default function useForm(callback, validate) {
   //validate = validate = validateInfo(values)
     const [values, setValues] = useState({
         username: '',
-        email: '',
+        //email: '',
         phone: ''
     })
     const [errors, setErrors] = useState({});

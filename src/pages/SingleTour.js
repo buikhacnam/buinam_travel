@@ -4,6 +4,9 @@ import {Link} from "react-router-dom";
 import Slider from "react-slick";
 import BannerTwo from "../components/BannerTwo";
 import Form from '../components/Form';
+import Modal from '../components/Modal';
+
+
 
 export default class SingleTour extends Component {
    
@@ -11,7 +14,8 @@ export default class SingleTour extends Component {
        super(props);
        //console.log(props);
        this.state = {
-           slug: this.props.match.params.slug
+           slug: this.props.match.params.slug,
+           isOpen: false
        }
    }
 
@@ -20,6 +24,22 @@ export default class SingleTour extends Component {
    componentDidMount() {
     window.scrollTo(0, 0)
   }
+
+  handleOpen = () => {
+      this.setState({
+          isOpen: true
+      })
+  }
+
+  handleClose = () => {
+    this.setState({
+        isOpen: false
+    })
+
+    
+}
+
+
    
     render() {
 
@@ -35,6 +55,7 @@ export default class SingleTour extends Component {
             )
         }
         const {images, name, departure, price, duration, description, services} = tour;
+        
         // eslint-disable-next-line no-unused-vars
         let [mainImg, ...defaultImg] = images;
         
@@ -70,41 +91,46 @@ export default class SingleTour extends Component {
                         </Slider>
                         <div className="information">
                     
-                        <div className="tour-description">
-                            <h3>Thành Phố {name}</h3>
-                            <p>{description}</p>
+                            <div className="tour-description">
+                                <h3>Thành Phố {name}</h3>
+                                <p>{description}</p>
 
-                            <div className="extra-info">
-                                <h5>Tour bao gồm</h5>
-                                <ul className="extra">
-                                    {services.map((item, index)=> {
-                                        return <li key={index}><p>- {item}</p></li>
-                                    })}
-                                </ul>
-                             </div>
-                        </div>
+                                <div className="single-tour-info">
+                                    <h3>Thông Tin Tour</h3>
+                                    <p>Địa điểm: {name}</p>
+                                    <p>Khởi hành từ: {departure}</p>
+                                    <p>Lịch trình tour: {duration} ngày {duration - 1} đêm</p>
+                                    <p>Giá tour: ${price}</p>
+                                </div>
+                                <div className="extra-info">
+                                    <h3>Dịch vụ kèm theo</h3>
+                                    <ul className="extra">
+                                        {services.map((item, index)=> {
+                                            return <li key={index}><p>- {item}</p></li>
+                                        })}
+                                    </ul>
+                                </div>
+                           </div>
                       
                     
                    
                     
                         
-                        <Form price={price}>
-                             <div className="single-tour-info">
-                                <h3>Thông Tin Tour</h3>
-                                <p>Địa điểm: {name}</p>
-                                <p>Khởi hành từ: {departure}</p>
-                                <p>Lịch trình tour: {duration} ngày {duration - 1} đêm</p>
-                                <p>Giá tour: ${price}</p>
-                           </div>
-                        </Form>
+                          <Form price={price} submitForm={this.handleOpen}>
+                           
+                          </Form>
                         
                      
                     
                  
-                 </div>
+                        </div>
+
+                        <Modal open={this.state.isOpen} onClose={this.handleClose}>
+                                
+                        </Modal>
                  
                  
-                 </div>
+                </div>
 
                 
                 

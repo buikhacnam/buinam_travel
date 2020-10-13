@@ -49,6 +49,7 @@ a {
     color: var(--mainBlack);
 }
 
+
 :root {
     --mainTransition : all 0.3s linear;
     --mainSpacing: 3px;
@@ -109,7 +110,7 @@ a {
     left: 0;
     width: 100%;
     padding: 0.2rem 2rem;
-    z-index: 2;
+    z-index: 6;
     background-color: var(--mainWhite);
     
 }
@@ -463,6 +464,11 @@ a {
 /*slide images */
 
 
+.slide-img-container {
+    position: relative;
+    z-index: 5;
+}
+
 .theme {
 
     display: flex;
@@ -614,14 +620,13 @@ input[type='range'] {
 /*tour-info-detail */
 
 .information {
-    padding: 40px;
+    padding: 70px;
     margin: 0;
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 400px;
     grid-template-rows: auto;
-    grid-column-gap: 60px;
-    grid-row-gap: 30px;
+    column-gap: 100px;
     grid-template-areas:
     "tour-description  form-container";
     
@@ -658,7 +663,8 @@ input[type='range'] {
 .extra {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: start;
 }
 
 .extra li {
@@ -671,10 +677,9 @@ input[type='range'] {
 /* form request tour: */
 .form-container {
     grid-area: form-container;
-    
-   
     margin-bottom: 50px;
-    
+    position: sticky;
+    top: 85px;   
 }
 
 .form-header {  
@@ -767,6 +772,7 @@ input[type='range'] {
 
 .single-tour-info {
     grid-area: single-tour-info;
+    margin-top: 40px;
 }
 
 .single-tour-info h3{
@@ -777,3 +783,31 @@ input[type='range'] {
  letter-spacing: var(--mainSpacing);
 }
 
+/*modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--mainWhite);
+    z-index: 100;
+    padding: 50px;   
+    transition: all .5s ease-in-out;
+    text-align: center;
+    
+    
+}
+
+.modal i {
+    color: var(--mainYellow);
+}
+
+.overlay {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 100;
+}
