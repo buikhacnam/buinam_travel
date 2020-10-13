@@ -7,8 +7,8 @@ const FormSuccess = () => {
   return (
     <div className="form-container" style={{textAlign: "center"
     }}>
-      <h3>Cảm ơn quý khách</h3>
-      <h5>Chúng tôi sẽ liên hệ tới quý khách<br/> trong 5 phút</h5>
+      <h2>Đăng Kí Thành Công!</h2>
+      <h3 style={{lineHeight : "1.5"}}>Vui lòng kiểm tra hòm thư để cập nhật <br/> các voucher hot nhất</h3>
      
     </div>
   );

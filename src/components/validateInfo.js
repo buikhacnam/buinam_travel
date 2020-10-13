@@ -15,7 +15,7 @@ export default function validateInfo(values) {
   } else if (!/((09|03|07|08|05)+([0-9]{8})\b)/g.test(values.phone)) {
     errors.phone = 'Số điện thoại không hợp lệ';
   }
-  console.log(errors)
+  
     return errors;
 
     

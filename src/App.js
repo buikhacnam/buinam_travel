@@ -8,6 +8,7 @@ import About from './pages/About';
 import Tours from './pages/Tours';
 import SingleTour from './pages/SingleTour';
 import Errors from './pages/Errors';
+import Footer from './components/Footer';
 
 
 import {Route} from "react-router-dom";
@@ -26,7 +27,7 @@ function App() {
       <Route component={Errors}  />
 
     </Switch>
-    
+    <Footer />
 
     </>
   );
