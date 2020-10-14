@@ -381,6 +381,8 @@ a {
     
 }
 
+
+
 .tour:hover {
     transition: all .5s ease-in-out;
     -webkit-box-shadow: 0px 6px 14px 8px rgba(94,87,94,0.72);
@@ -501,7 +503,7 @@ a {
 
 .slides .slick-prev:before , .slides .slick-next:before {
     font-size: 45px;
-    color: var(--mainYellow);
+    color: var(--mainWhite);
 }
 
 .slides .slick-dots li.slick-active button:before {
@@ -626,12 +628,13 @@ input[type='range'] {
 
 .information {
     padding: 70px;
+    padding-top: 30px;
     margin: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 400px;
     grid-template-rows: auto;
-    column-gap: 100px;
+    column-gap: 70px;
     grid-template-areas:
     "tour-description  form-container";
     
@@ -649,7 +652,9 @@ input[type='range'] {
 
 .tour-description {
     grid-area: tour-description;
-   
+   padding: 30px;
+   background-color: var(--mainWhite);
+
 }
 
 .tour-description p {
@@ -678,13 +683,30 @@ input[type='range'] {
     
 }
 
+.pics-single-tour {
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.pics-single-tour img {
+    width: 100%;
+    display: block;
+}
+
+
+
 
 /* form request tour: */
 .form-container {
     grid-area: form-container;
-    margin-bottom: 50px;
+    padding: 30px;
     position: sticky;
     top: 85px;   
+    background-color: var(--mainWhite);
+    
 }
 
 .form-header {  
@@ -714,7 +736,7 @@ input[type='range'] {
 
 .form-control input, .form-control-date input {
 	border: 2px solid #f0f0f0;
-	
+	background-color: var(--mainGrey);
 	display: block;
 	font-size: 14px;
 	padding: 10px;
@@ -802,19 +824,25 @@ input[type='range'] {
     transform: translate(-50%, -50%);
     background: var(--mainWhite);
     z-index: 100;
-    padding: 10px;   
+    padding: 30px 60px;   
     transition: all .5s ease-in-out;
     text-align: center;
     
     
 }
 
-@media screen and (max-width: 450px) {
-    .modal {
-        padding-left: 5px;
-        padding-right: 5px;
+@media screen and (max-width: 550px) {
+    .modal h5{
+        font-size: 0.8rem;
     
         
+    }.modal h3 {
+        font-size: 0.8rem;
+    }.modal p {
+        font-size: 0.8rem;
+    }
+    .modal {
+        padding: 10px;
     }
 }
 .modal i {
@@ -882,13 +910,20 @@ input[type='range'] {
     padding: 20px;
 }
 
+@media screen and (max-width: 550px) {
+    .subscribe h2 {
+        font-size: 1.2rem;
+    }
+
+}
+
 .email-container {
     width: 70vw;
 }
 
 .confirm {
     display: grid;
-    row-gap: 1.2rem;
+    row-gap: 1rem;
    margin-bottom: 10px;
-   font-size: 0.8rem;
+   font-size: 0.9rem;
 }

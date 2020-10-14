@@ -5,7 +5,7 @@ import React from 'react';
 
 const FormSuccess = () => {
   return (
-    <div className="form-container" style={{textAlign: "center"
+    <div  style={{textAlign: "center"
     }}>
       <h2>Đăng Kí Thành Công!</h2>
       <h3 style={{lineHeight : "1.5"}}>Vui lòng kiểm tra hòm thư để cập nhật <br/> các voucher hot nhất</h3>

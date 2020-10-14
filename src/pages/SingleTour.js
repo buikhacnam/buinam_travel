@@ -128,6 +128,11 @@ updatePeople =(people) => {
                                     <p>Lịch trình tour: {duration} ngày {duration - 1} đêm</p>
                                     <p>Giá tour: ${price}</p>
                                 </div>
+                                <div className="pics-single-tour">
+                                        {images.map((image, index) => {
+                                            return <img src={image} key={index} alt="" />
+                                        })}
+                                </div>
                                 <div className="extra-info">
                                     <h3>Dịch vụ kèm theo</h3>
                                     <ul className="extra">
@@ -136,6 +141,8 @@ updatePeople =(people) => {
                                         })}
                                     </ul>
                                 </div>
+                                
+
                            </div>
                       
                     
