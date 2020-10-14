@@ -16,6 +16,8 @@ export default function FormSignup({submitForm, recentPrice, increasedPrice, dec
         return   decreasedPrice()
     }
 
+    
+
     return (
         
         
@@ -29,7 +31,7 @@ export default function FormSignup({submitForm, recentPrice, increasedPrice, dec
                <DatePicker 
                            selected={date}
                            onChange={handleDateChange}
-                           format="dd-MM-YYYY"
+                           
                            className="datePicker"
                />
          </div>

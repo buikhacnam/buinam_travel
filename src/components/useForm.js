@@ -16,13 +16,18 @@ export default function useForm(callback, validate) {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
 
+    
+
     const handleChange = e => {
-        const {name, value} = e.target;
+     
+      const {name, value} = e.target;
         setValues({
             ...values,
             [name]: value
         });
-       
+        
+     
+        
 
     }
 
@@ -30,23 +35,28 @@ export default function useForm(callback, validate) {
       setDate(date)
     }
 
+   
+
     const handleSubmit = e => {
         e.preventDefault();
         setErrors(validate(values));
         setIsSubmitting(true);
+        
     }
 
     
 
     useEffect(
         () => {
+          
           if (Object.keys(errors).length === 0 && isSubmitting) {
-            callback();
+            
+            callback(values, date);
             setValues({
-              username: '',
-              email: '',
-              phone: ''
-            });
+              username: "",
+              phone: ""
+          });
+            
           }
         },
         // eslint-disable-next-line react-hooks/exhaustive-deps

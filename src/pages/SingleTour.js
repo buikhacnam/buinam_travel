@@ -13,24 +13,39 @@ export default class SingleTour extends Component {
    constructor(props) {
        super(props);
        //console.log(props);
+       
        this.state = {
            slug: this.props.match.params.slug,
-           isOpen: false
+           isOpen: false,
+           values: {
+               username: "",
+               phone: ""
+           },
+           date: "",
+           price: "",
+           people: ""
        }
+      
    }
-
+  
    static contextType = TourContext;
 
    componentDidMount() {
     window.scrollTo(0, 0)
   }
 
-  handleOpen = () => {
+  handleOpen = (values, date) => {
       this.setState({
-          isOpen: true
+          isOpen: true,
+          values: {
+            username: values.username,
+            phone: values.phone
+        },
+        date: `${date.getDate()} / ${date.getMonth() + 1} / ${date.getFullYear()}`,
       })
+      
   }
-
+  
   handleClose = () => {
     this.setState({
         isOpen: false
@@ -39,6 +54,17 @@ export default class SingleTour extends Component {
     
 }
 
+updatePrice =(price) => {
+    this.setState({
+        price
+    })
+}
+
+updatePeople =(people) => {
+    this.setState({
+        people
+    })
+}
 
    
     render() {
@@ -116,8 +142,8 @@ export default class SingleTour extends Component {
                    
                     
                         
-                          <Form price={price} submitForm={this.handleOpen}>
-                           
+                          <Form price={price} submitForm={this.handleOpen} updatePrice={this.updatePrice} updatePeople={this.updatePeople}>
+                                        
                           </Form>
                         
                      
@@ -126,7 +152,16 @@ export default class SingleTour extends Component {
                         </div>
 
                         <Modal open={this.state.isOpen} onClose={this.handleClose}>
+                                      
+                            <div className="confirm">
+                                <p>Tên Khách Hàng: {this.state.values.username}</p>
+                                <p>Số điện thoại: {this.state.values.phone}</p>
+                                <p>Book tour: {name}</p>
+                                <p>Ngày khởi hành: {this.state.date}</p>
+                                <p>Số thành viên: {this.state.people}</p>
+                                <p>Chi phí: ${this.state.price}</p>
                                 
+                            </div>  
                         </Modal>
                  
                  

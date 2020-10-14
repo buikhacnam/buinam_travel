@@ -1,17 +1,18 @@
 import React from 'react';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import FormSignUp from './FormSignup';
 
 
-export default function Form({price, submitForm, children}) {
+export default function Form({price, submitForm, updatePrice,updatePeople, children}) {
    // const [isSubmitted, setIsSubmitted] = useState(false);
-    const [recentPrice, setRecentPrice] = useState(price);
-    const [person, setPerson] = useState(1);
+   const recent = price; 
+   const [recentPrice, setRecentPrice] = useState(recent);
+   const [person, setPerson] = useState(1);
 
-  
 
   function increasedPrice() {
     setRecentPrice(recentPrice + price);
+    
     setPerson(person + 1);
   }
   
@@ -23,9 +24,17 @@ export default function Form({price, submitForm, children}) {
   }
 
   
-    
+  useEffect(
+    () => {
+      updatePrice(recentPrice);
+      updatePeople(person)
+    }, 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [recentPrice, person]
+  )
+  
 
-
+  
     return (
       
     //  <>
