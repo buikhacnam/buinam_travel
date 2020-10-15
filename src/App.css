@@ -194,7 +194,7 @@ a {
 /* Hero */
 .defaultHero, .toursHero, .aboutHero {
     min-height: calc(100vh - 68px);
-    background: url("https://images.pexels.com/photos/2676642/pexels-photo-2676642.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center/cover no-repeat;
+    background: url("https://images.pexels.com/photos/1796736/pexels-photo-1796736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center/cover no-repeat;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -208,7 +208,7 @@ a {
 
 .aboutHero {
     min-height: calc(100vh - 68px);
-    background-image: url("https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://images.pexels.com/photos/51947/tuscany-grape-field-nature-51947.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
 
 /* Banner */

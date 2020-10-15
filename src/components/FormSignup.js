@@ -44,7 +44,7 @@ export default function FormSignup({submitForm, recentPrice, increasedPrice, dec
                 <input type='text'
                         id="username"
                         name='username'
-                        placeholder="nhập tên bạn"
+                        placeholder="nhập tên"
                         value={values.username}
                         onChange={handleChange}
                        

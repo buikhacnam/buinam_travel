@@ -15,7 +15,7 @@ export default class FeaturedTours extends Component {
 
         return (
             <section className="featured-tours">
-                <TitleTwo title="Tours đặc biệt" />
+                <TitleTwo title="Tours nổi bật" />
                 <div className="featured-tours-center">
                     {loading ? <Loading /> : tours}
                 </div>

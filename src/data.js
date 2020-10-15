@@ -295,7 +295,7 @@ export default [
      id: "20"
    },
    fields: {
-     featured: false,
+     featured: true,
      name: "Rome",
      slug: "rome",
      continent: "Châu Âu",
@@ -585,7 +585,7 @@ export default [
      id: "18"
    },
    fields: {
-     featured: true,
+     featured: false,
      name: "Sydney",
      slug: "sydney",
      continent: "Châu Á",
