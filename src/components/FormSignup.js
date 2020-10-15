@@ -5,6 +5,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 
+
 export default function FormSignup({submitForm, recentPrice, increasedPrice, decreasedPrice, person}) {
     const {handleChange, values, handleSubmit, errors, date, handleDateChange} = useForm(submitForm, validate);
     

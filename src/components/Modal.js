@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import {Link} from "react-router-dom";
+import {FaTimes} from 'react-icons/fa';
 
 
 
 
 const btnStyle = {
     position: "absolute",
-    top: "2px",
-    right: "2px"   
+    top: 0,
+    right: 0   
 }
 
 export default function Modal({open, children, onClose}) {
@@ -26,7 +27,7 @@ export default function Modal({open, children, onClose}) {
             
             <div className="modal">
                 
-                <button style={btnStyle} className="btn-primary-2" onClick={onClose}>đóng</button>
+                <button style={btnStyle} className="btn-primary-2" onClick={onClose}><FaTimes /></button>
                 <h1><i className="fas fa-check-circle"></i></h1>
                 <h3>Gửi yêu cầu thành công!</h3>
                 <h5>Chúng tôi sẽ liên hệ tới quý khách trong vài phút</h5>

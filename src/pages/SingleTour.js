@@ -162,11 +162,11 @@ updatePeople =(people) => {
                                       
                             <div className="confirm">
                                 <p>Tên Khách Hàng: {this.state.values.username}</p>
-                                <p>Số điện thoại: {this.state.values.phone}</p>
-                                <p>Book tour: {name}</p>
-                                <p>Ngày khởi hành: {this.state.date}</p>
-                                <p>Số thành viên: {this.state.people}</p>
-                                <p>Chi phí: ${this.state.price}</p>
+                                <p>Số Điện Thoại: {this.state.values.phone}</p>
+                                <p>Book Tour: {name}</p>
+                                <p>Ngày Khởi Hành: {this.state.date}</p>
+                                <p>Số Thành Viên: {this.state.people}</p>
+                                <p>Chi Phí: ${this.state.price}</p>
                                 
                             </div>  
                         </Modal>

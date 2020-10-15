@@ -171,6 +171,7 @@ a {
         margin: 0 auto;
         max-width: 1170px;
         align-items:center;
+        padding: 0;
         
     }
 
@@ -831,7 +832,7 @@ input[type='range'] {
     
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
     .modal h5{
         font-size: 0.8rem;
     
