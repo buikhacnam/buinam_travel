@@ -643,7 +643,7 @@ export default [
      id: "13"
    },
    fields: {
-     featured: true,
+     featured: false,
      name: "Mexico City",
      slug: "mexico-city",
      continent: "Châu Mĩ",
@@ -933,7 +933,7 @@ export default [
      id: "9"
    },
    fields: {
-     featured: false,
+     featured: true,
      name: "Seoul",
      slug: "seoul",
      continent: "Châu Á",

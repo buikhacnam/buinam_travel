@@ -5,6 +5,9 @@ import Slider from "react-slick";
 import BannerTwo from "../components/BannerTwo";
 import Form from '../components/Form';
 import Modal from '../components/Modal';
+import Tour from '../components/Tour';
+import TitleTwo from '../components/TitleTwo';
+
 
 
 
@@ -31,7 +34,12 @@ export default class SingleTour extends Component {
    static contextType = TourContext;
 
    componentDidMount() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
+    
+  }
+
+  reload = () => {
+      console.log("reload")
   }
 
   handleOpen = (values, date) => {
@@ -72,6 +80,7 @@ updatePeople =(people) => {
         const { getTour } = this.context;
         const tour = getTour(this.state.slug);
 
+
         if(!tour) {
             return (
                 <div className="error">
@@ -80,7 +89,12 @@ updatePeople =(people) => {
                 </div>
             )
         }
-        const {images, name, departure, price, duration, description, services} = tour;
+        const {images, name, departure, price, duration, description, services, continent} = tour;
+
+        
+        let {tours} = this.context;
+        tours =  tours.filter(tour => tour.continent === continent);
+        
         
         // eslint-disable-next-line no-unused-vars
         let [mainImg, ...defaultImg] = images;
@@ -157,6 +171,15 @@ updatePeople =(people) => {
                     
                  
                         </div>
+                        <div className="tourslist">
+                            <TitleTwo title={`Tour ${continent} khác`} />
+                        <div className="tourslist-center">
+                            {tours.map(item => {
+                                return <Tour key={item.id} tour={item} />
+                            })}
+                        </div>
+                        </div>
+                       
 
                         <Modal open={this.state.isOpen} onClose={this.handleClose}>
                                       

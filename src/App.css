@@ -628,14 +628,16 @@ input[type='range'] {
 /*tour-info-detail */
 
 .information {
-    padding: 70px;
+    padding: 65px;
     padding-top: 30px;
+    padding-bottom: 30px;
     margin: 0;
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 400px;
     grid-template-rows: auto;
     column-gap: 70px;
+    border-bottom: 20px solid var(--mainWhite);
     grid-template-areas:
     "tour-description  form-container";
     
@@ -695,6 +697,11 @@ input[type='range'] {
 .pics-single-tour img {
     width: 100%;
     display: block;
+}
+
+.error {
+    text-align: center;
+    margin: 2rem 0;
 }
 
 

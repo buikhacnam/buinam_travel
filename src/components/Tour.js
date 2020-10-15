@@ -1,16 +1,24 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { useEffect } from 'react';
 //import PropTypes from 'prop-types';
 
 
 export default function Tour({tour}) {
+
+    
    
     const {name, slug, images, price, duration, continent, departure} = tour;
+
+    useEffect(()=> {
+        window.scrollTo(0,0);
+        
+    }, [])
   
     return (
-        <Link to={`/tours/${slug}`}>
+        <Link  to={`/tours/${slug}`}  >
         
-        <article className="tour">
+        <article className="tour" >
             <div className="img-container-container">
                 <div className="img-container">
                     <img src={images[0]} alt="tour" />
