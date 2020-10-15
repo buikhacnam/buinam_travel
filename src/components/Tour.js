@@ -4,19 +4,24 @@ import { useEffect } from 'react';
 //import PropTypes from 'prop-types';
 
 
-export default function Tour({tour}) {
+export default function Tour({tour, target}) {
 
     
    
     const {name, slug, images, price, duration, continent, departure} = tour;
-
+    
     useEffect(()=> {
         window.scrollTo(0,0);
         
     }, [])
+   
+
+    
+    
+    
   
     return (
-        <Link  to={`/tours/${slug}`}  >
+        <Link  to={`/tours/${slug}`}  target={target}>
         
         <article className="tour" >
             <div className="img-container-container">

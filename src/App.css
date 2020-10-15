@@ -503,7 +503,7 @@ a {
 }
 
 .slides .slick-prev:before , .slides .slick-next:before {
-    font-size: 45px;
+    font-size: 70px;
     color: var(--mainWhite);
 }
 
@@ -634,7 +634,7 @@ input[type='range'] {
     margin: 0;
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr 350px;
     grid-template-rows: auto;
     column-gap: 70px;
     border-bottom: 20px solid var(--mainWhite);
@@ -643,7 +643,7 @@ input[type='range'] {
     
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:950px) {
     .information {
         padding: 20px;
         grid-template-columns:1fr;

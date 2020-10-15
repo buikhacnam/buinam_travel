@@ -15,7 +15,7 @@ export default class SingleTour extends Component {
    
    constructor(props) {
        super(props);
-       //console.log(props);
+       
        
        this.state = {
            slug: this.props.match.params.slug,
@@ -33,14 +33,15 @@ export default class SingleTour extends Component {
   
    static contextType = TourContext;
 
+  
+
    componentDidMount() {
     window.scrollTo(0, 0);
     
+    
   }
 
-  reload = () => {
-      console.log("reload")
-  }
+  
 
   handleOpen = (values, date) => {
       this.setState({
@@ -174,12 +175,13 @@ updatePeople =(people) => {
                         <div className="tourslist">
                             <TitleTwo title={`Tour ${continent} khác`} />
                         <div className="tourslist-center">
-                            {tours.map(item => {
-                                return <Tour key={item.id} tour={item} />
+                            {tours.map(tour => {
+                                return <Tour  key={tour.id} tour={tour}  target="_blank" />
                             })}
                         </div>
                         </div>
-                       
+
+                        
 
                         <Modal open={this.state.isOpen} onClose={this.handleClose}>
                                       
