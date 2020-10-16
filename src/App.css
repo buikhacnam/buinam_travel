@@ -593,11 +593,11 @@ a {
 }
 
 .slides .slick-prev:before , .slides .slick-next:before {
-    font-size: 70px;
+    font-size: 60px;
     color: var(--mainWhite);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 	.slides .slick-prev:before , .slides .slick-next:before {
     font-size: 30px;
     
