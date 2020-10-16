@@ -24,7 +24,7 @@ export default function EmailSignup({submitForm}) {
                 />
                 {error && <small>{error}</small>}
             </div>
-            <button type="submit" style={{display: "inline-block", marginTop: "15px"}} className="btn-primary">Đăng Kí</button>
+            <button type="submit" style={{display: "inline-block", marginTop: "15px"}} className="btn-second">Đăng Kí</button>
         </form>
     </div>
     )

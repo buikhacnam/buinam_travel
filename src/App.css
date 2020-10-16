@@ -90,7 +90,34 @@ a {
     outline: none;
 }
 
+.btn-second {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: var(--mainSpacing);
+    color: var(--mainYellow);
+    background-color: transparent;
+    padding: 0.4rem 0.9rem;
+    border: 3px solid var(--mainYellow);
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 1;
+    outline: none;
+}
 
+.btn-second-2 {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: var(--mainSpacing);
+    color: var(--mainYellow);
+    background-color: transparent;
+    padding: 0.3rem 0.5rem;
+    border: 2px solid var(--mainYellow);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    cursor: pointer;
+    z-index: 1;
+    outline: none;
+}
 .react-datepicker {
     z-index: 5;
 }
@@ -105,6 +132,16 @@ a {
     color: var(--mainYellow);
 }
 
+
+.btn-second:hover {
+    background:var(--mainYellow);
+    color: var(--mainBlack);
+}
+
+.btn-second-2:hover {
+    background:var(--mainYellow);
+    color: var(--mainBlack);
+}
 /*Navbar */
 .navbar {
     position: fixed;
@@ -317,16 +354,15 @@ a {
 
 /*services */
 .services {
-    padding: 1rem 0;
-    padding-bottom : 1rem;
+    padding: 2rem 0;
     background-color: var(--mainWhite);
     text-align: center;
 }
 
 .services-center {
     width: 90vw;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 0;
+    padding-top: 0;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
@@ -360,10 +396,23 @@ a {
     grid-column-gap: 40px;
 }
 
-@media screen and (min-width: 776px) {
+.featured-tours-center-2 {
+    margin: 0 auto;
+    display: grid;
+    width: 80vw;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 40px;
+}
+
+@media screen and (min-width: 850px) {
     .featured-tours-center {
         width: 90vw;
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+    .featured-tours-center-2 {
+        width: 90vw;
+        grid-template-columns: 495px 495px;
     }
 }
 
@@ -376,7 +425,18 @@ a {
 
 }
 
+.tour-horizontal {
+    background-color: var(--mainWhite);
+    border: var(--mainBorder) 1px solid;
+}
+
 .tour img {
+    width: 100%;
+    display: block;
+    
+}
+
+.tour-horizontal img {
     width: 100%;
     display: block;
     
@@ -406,6 +466,12 @@ a {
 
 .img-container-container {
     overflow: hidden;  
+}
+
+.img-container-container-horizontal {
+    overflow: hidden;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .img-container {  
@@ -451,7 +517,26 @@ a {
     border-top: 5px solid transparent;
 }
 
+
+
 .tour-info-container p {
+    font-size: 0.8em;
+    margin: 0.4rem 0;
+    font-weight: 540;
+    color: #8F8F8F;
+    letter-spacing: 2px;
+}
+
+.tour-info-container-horizontal {
+    display: grid;
+    padding: 1rem 1rem;
+    padding-top: 10px;
+    border-top: 5px solid transparent;
+}
+
+
+
+.tour-info-container-horizontal p {
     font-size: 0.8em;
     margin: 0.4rem 0;
     font-weight: 540;
@@ -467,6 +552,11 @@ a {
     font-size: 1.4rem;
 }
 
+@media screen and (max-width: 400px) {
+    .script-container p{
+        font-size: 0.7rem;
+    }
+}
 
 /*slide images */
 
@@ -526,12 +616,28 @@ a {
     grid-column-gap: 30px;
 }
 
+.tourslist-center-horizontal {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-row-gap: 1rem;
+    grid-column-gap: 30px;
+}
+
+
 @media screen and (min-width: 776px) {
     .tourslist-center {
         width: 90vw;
     }
 }
 
+@media screen and (max-width: 500px) {
+    .tourslist-center-horizontal {
+        width: 95vw;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
 
 /*Tour filter */
 .filter-container {
@@ -637,7 +743,7 @@ input[type='range'] {
     grid-template-columns: 1fr 350px;
     grid-template-rows: auto;
     column-gap: 70px;
-    border-bottom: 20px solid var(--mainWhite);
+    
     grid-template-areas:
     "tour-description  form-container";
     

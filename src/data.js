@@ -180,7 +180,7 @@ export default [
      id: "5"
    },
    fields: {
-     featured: true,
+     featured: false,
      name: "Barcelona",
      slug: "barcelona",
      continent: "Châu Âu",
@@ -449,7 +449,7 @@ export default [
        {
          fields: {
            file: {
-             url: "https://images.pexels.com/photos/2846075/pexels-photo-2846075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+             url: "https://images.pexels.com/photos/1423580/pexels-photo-1423580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
            }
          } 
        },
@@ -469,7 +469,7 @@ export default [
      id: "2"
    },
    fields: {
-     featured: true,
+     featured: false,
      name: "Paris",
      slug: "paris",
      continent: "Châu Âu",
@@ -759,7 +759,7 @@ export default [
      id: "7"
    },
    fields: {
-     featured: true,
+     featured: false,
      name: "Athens",
      slug: "athens",
      continent: "Châu Âu",
@@ -933,7 +933,7 @@ export default [
      id: "9"
    },
    fields: {
-     featured: true,
+     featured: false,
      name: "Seoul",
      slug: "seoul",
      continent: "Châu Á",
@@ -991,7 +991,7 @@ export default [
      id: "12"
    },
    fields: {
-     featured: false,
+     featured: true,
      name: "Lisbon",
      slug: "lisbon",
      continent: "Châu Âu",

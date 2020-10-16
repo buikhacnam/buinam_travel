@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {FaHiking, FaCommentDots, FaPiggyBank, FaCrown} from 'react-icons/fa';
+import TitleTwo from './TitleTwo';
 
 
 export default class Services extends Component {
@@ -27,13 +28,13 @@ export default class Services extends Component {
     render() {
         return (
             <div className="services">
-                
+            <TitleTwo title="Happy Travel" />
                 <div className="services-center">
                     {this.state.services.map((item, index) => {
                         return(
                             <article key={index} className="service">
                                 <span>{item.icon}</span>
-                                <h6>{item.title}</h6>
+                                <h5>{item.title}</h5>
                             </article>
                         )
                     })}

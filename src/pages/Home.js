@@ -14,7 +14,7 @@ export default function Home() {
        <>
         <Hero>
             <Banner title="Đặt Tour Châu Âu!" subtitle="trải nghiệm Châu Âu chỉ từ $1999">
-                <Link to="/tours" className="btn-primary">xem tours</Link>
+                <Link to="/tours" className="btn-primary">khám phá</Link>
             </Banner>
         </Hero>
         

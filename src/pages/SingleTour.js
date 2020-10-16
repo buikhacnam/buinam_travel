@@ -5,8 +5,9 @@ import Slider from "react-slick";
 import BannerTwo from "../components/BannerTwo";
 import Form from '../components/Form';
 import Modal from '../components/Modal';
-import Tour from '../components/Tour';
+import TourHorizontal from '../components/TourHorizontal';
 import TitleTwo from '../components/TitleTwo';
+
 
 
 
@@ -97,7 +98,7 @@ updatePeople =(people) => {
         tours =  tours.filter(tour => tour.continent === continent);
         
         
-        // eslint-disable-next-line no-unused-vars
+       
         let [mainImg, ...defaultImg] = images;
         
         const setting = {
@@ -144,9 +145,9 @@ updatePeople =(people) => {
                                     <p>Giá tour: ${price}</p>
                                 </div>
                                 <div className="pics-single-tour">
-                                        {images.map((image, index) => {
-                                            return <img src={image} key={index} alt="" />
-                                        })}
+                                       
+                                            <img src={mainImg} alt="" />
+                                       
                                 </div>
                                 <div className="extra-info">
                                     <h3>Dịch vụ kèm theo</h3>
@@ -174,9 +175,9 @@ updatePeople =(people) => {
                         </div>
                         <div className="tourslist">
                             <TitleTwo title={`Tour ${continent} khác`} />
-                        <div className="tourslist-center">
+                        <div className="tourslist-center-horizontal">
                             {tours.map(tour => {
-                                return <Tour  key={tour.id} tour={tour}  target="_blank" />
+                                return <TourHorizontal  key={tour.id} tour={tour}  target="_blank" />
                             })}
                         </div>
                         </div>
