@@ -597,9 +597,9 @@ a {
     color: var(--mainWhite);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 	.slides .slick-prev:before , .slides .slick-next:before {
-    font-size: 15px;
+    font-size: 30px;
     
 }
 }
