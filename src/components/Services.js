@@ -20,7 +20,7 @@ export default class Services extends Component {
             },
             {
                 icon: <FaHiking />,
-                title: "Tour guide chuyên nghiệp"
+                title: "guide chuyên nghiệp"
             }
         ]
     }
