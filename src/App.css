@@ -293,7 +293,7 @@ a {
     margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) {
     .banner {
         padding: 2rem 6rem;
     }
