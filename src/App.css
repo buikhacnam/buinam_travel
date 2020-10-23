@@ -279,6 +279,7 @@ a {
 
 .banner h1 {
     font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 .banner div {
@@ -302,12 +303,15 @@ a {
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 750px) {
     .banner {
         padding: 2rem 3rem;
     }
     .banner h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
+    }
+    .banner p {
+        font-size: 1.5rem;
     }
 }
 
