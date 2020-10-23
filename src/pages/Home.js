@@ -13,7 +13,7 @@ export default function Home() {
     return (
        <>
         <Hero>
-            <Banner title="Đặt Tour Châu Âu!" subtitle="trải nghiệm Châu Âu chỉ từ $1590">
+            <Banner title="Đặt Tour Châu Âu" subtitle="trải nghiệm Châu Âu chỉ từ $1590">
                 <Link to="/tours" className="btn-primary">khám phá</Link>
             </Banner>
         </Hero>
