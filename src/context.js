@@ -55,15 +55,18 @@ class TourProvider extends Component {
     }
 
     handleChange = event => {
-        const value = event.target.type === "checkbox" ? 
-        event.target.checked : event.target.value;    
-
-        this.setState (
-            {
-                [event.target.name]: value
-            },
-            this.filterTours
-        )
+        const target = event.target;
+       const value = target.type === "checkbox" ?
+       target.checked : target.value;
+       const name = event.target.name;
+      
+       this.setState(
+           {
+               [name]: value
+               //capacity: 2
+           },
+           this.filterTours
+       )
     }
 
     filterTours = () => {
@@ -131,5 +134,7 @@ class TourProvider extends Component {
 }
 
 const TourConsumer = TourContext.Consumer;
+
+
 
 export {TourContext, TourProvider, TourConsumer};

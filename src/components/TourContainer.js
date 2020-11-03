@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {TourContext} from '../context';
+import {useContext} from 'react';
 import Loading from "./Loading";
 import TourFilter from "./TourFilter";
 import TourList from './TourList';
 
-export default class TourContainer extends Component {
-    static contextType = TourContext;
+export default function TourContainer() {
+    const context = useContext(TourContext);
+    const {loading, sortedTours, tours} = context;
 
-    render() {
-        const {loading, sortedTours, tours} = this.context;
+   
+        
      
         if (loading) {
             return <Loading />
@@ -20,5 +22,5 @@ export default class TourContainer extends Component {
                 <TourList tours ={sortedTours} />
             </>
         )
-    }
+    
 }
