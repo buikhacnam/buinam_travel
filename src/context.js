@@ -133,8 +133,4 @@ class TourProvider extends Component {
     }
 }
 
-const TourConsumer = TourContext.Consumer;
-
-
-
-export {TourContext, TourProvider, TourConsumer};
+export {TourContext, TourProvider};

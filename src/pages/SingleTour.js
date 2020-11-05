@@ -34,15 +34,10 @@ export default class SingleTour extends Component {
   
    static contextType = TourContext;
 
-  
 
    componentDidMount() {
     window.scrollTo(0, 0);
-    
-    
   }
-
-  
 
   handleOpen = (values, date) => {
       this.setState({
@@ -77,7 +72,7 @@ updatePeople =(people) => {
 }
 
    
-    render() {
+render() {
 
         const { getTour } = this.context;
         const tour = getTour(this.state.slug);
@@ -173,6 +168,7 @@ updatePeople =(people) => {
                     
                  
                         </div>
+
                         <div className="tourslist">
                             <TitleTwo title={`Tour ${continent} khác`} />
                         <div className="tourslist-center-horizontal">

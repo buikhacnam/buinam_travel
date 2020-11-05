@@ -4,7 +4,7 @@ import FormSignUp from './FormSignup';
 
 
 export default function Form({price, submitForm, updatePrice,updatePeople, children}) {
-   // const [isSubmitted, setIsSubmitted] = useState(false);
+
    const recent = price; 
    const [recentPrice, setRecentPrice] = useState(recent);
    const [person, setPerson] = useState(1);
@@ -18,8 +18,8 @@ export default function Form({price, submitForm, updatePrice,updatePeople, child
   
   function decreasedPrice() {
     if (recentPrice > price) {
-    setRecentPrice(recentPrice - price);
-    setPerson(person - 1);
+      setRecentPrice(recentPrice - price);
+      setPerson(person - 1);
     }
   }
 
@@ -33,25 +33,12 @@ export default function Form({price, submitForm, updatePrice,updatePeople, child
     [recentPrice, person]
   )
   
-
-  
     return (
-      
-    //  <>
-    //        {!isSubmitted ? 
+   
               <div>
                 <FormSignUp submitForm={submitForm} recentPrice={recentPrice} increasedPrice={increasedPrice} decreasedPrice={decreasedPrice} person={person}/>
                 {children}
               </div>
-     //        :<div> 
-      //          <FormSignUp submitForm={submitForm} recentPrice={recentPrice} increasedPrice={increasedPrice} decreasedPrice={decreasedPrice} person={person}/> 
-     //           <FormSuccess />
-       //         {children}
-      //         </div>
-       //     }
-      
-    //  </>
-        
-       
+     
     )
 }

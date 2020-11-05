@@ -1,22 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-//import PropTypes from 'prop-types';
+
 
 
 export default function Tour({tour, target}) {
-
-    
-   
+ 
     const {name, slug, images, price, duration, continent, departure} = tour;
-    
-    
-   
-
-    
-    
-    
-  
+     
     return (
         <Link  to={`/tours/${slug}`}  target={target}>
         

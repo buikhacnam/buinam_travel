@@ -9,19 +9,8 @@ import "react-datepicker/dist/react-datepicker.css";
 export default function FormSignup({submitForm, recentPrice, increasedPrice, decreasedPrice, person}) {
     const {handleChange, values, handleSubmit, errors, date, handleDateChange} = useForm(submitForm, validate);
     
-    function increasePrice() {
-      return   increasedPrice()
-    }
-
-    function decreasePrice() {
-        return   decreasedPrice()
-    }
-
-    
-
     return (
-        
-        
+           
         <div className="form-container">
             <h3 className="form-header">Đặt tour ngay!</h3>
            <form className="form" onSubmit={handleSubmit}>
@@ -81,9 +70,9 @@ export default function FormSignup({submitForm, recentPrice, increasedPrice, dec
                 
                 </div>
                 <div className="people">
-                    <button type="button" onClick={decreasePrice}className="btn-primary">giảm</button>
+                    <button type="button" onClick={decreasedPrice}className="btn-primary">giảm</button>
                     <div className="num"><p>{person} người</p></div>
-                    <button type="button" onClick={increasePrice} className="btn-primary">thêm</button>
+                    <button type="button" onClick={increasedPrice} className="btn-primary">thêm</button>
                 </div>
               
               </div>

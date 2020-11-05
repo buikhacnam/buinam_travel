@@ -3,8 +3,8 @@ import Tour from './Tour';
 
 //export default function TourList({tours}) {...
 
-export default function TourList(props) {
-    const tours = props.tours;
+export default function TourList({tours}) {
+   // const tours = props.tours;
     if(tours.length === 0) {
         return (
             <div className="empty-search">
