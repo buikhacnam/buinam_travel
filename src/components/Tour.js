@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { useEffect } from 'react';
+
 //import PropTypes from 'prop-types';
 
 
@@ -10,10 +10,7 @@ export default function Tour({tour, target}) {
    
     const {name, slug, images, price, duration, continent, departure} = tour;
     
-    useEffect(()=> {
-        window.scrollTo(0,0);
-        
-    }, [])
+    
    
 
     
